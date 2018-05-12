@@ -3,18 +3,16 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <?php
-	include ('layout/navbar.php')
+	include ('../layout/navbarpro.php')
 ?>
 </head>
-
 <body>
 <div class="container">
-    
     	<div class="row">
 			<div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Pegawai</h3>
+						<h3 class="panel-title">Proyek Assignment</h3>
 						<div class="pull-right">
 							<span class="searcg" data-toggle="tooltip" title="cari pegawai" data-container="body">
 								<i class="fa fa-search"></i>
@@ -27,14 +25,15 @@
 					<table class="table table-hover" id="dev-table">
 						<thead>
 							<tr>
-								<th>id</th>
-								<th>Nama Pegawai</th>
-								
+								<th>idProyek</th>
+								<th>Nama Proyek</th>
+                                <th>idPegawai</th>
+                                <th>namaPegawai</th>
 							</tr>
 						</thead>
 						<tbody>
 						<?php
-							include ('phpScript/tabel-pegawai.php');
+							include ('../phpScript/tabel-pekerjaan.php');
 						?>
 						</tbody>
 					</table>
