@@ -4,30 +4,29 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <?php
-	include ('../layout/navbarlap.php')
+	include ('../layout/navbarlog.php')
 ?>
 </head>
 <body>
 <div class="row">
   <div class="col-lg-4" allign = "center">
     <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Total Waktu yang digunakan Proyek <i class ="fa fa-angle-down" ></i></button>
-    <div id = "tabel1" class = "collapse">
-            <table class="table table-hover" id="dev-table">
-						<thead>
-							<tr>
-								<th>id Proyek</th>
-								<th>Nama Proyek</th>
-                                <th>Total Waktu Kerja Proyek</th>
-							</tr>
-						</thead>
-						<tbody>
-						<?php
-							include ('../phpScript/tabel-totalwaktu.php');
-						?>
-						</tbody>
-				</table>
+    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi">Total Waktu yang digunakan Proyek <i class ="fa fa-angle-down" ></i></button>
+    <form action="/action_page.php">
+        <fieldset id = "formi" class = "collapse">
+        <legend>Proyek</legend>
+            <div class="form-group">
+            <label for="sel1">Pilih Proyek (idProyek):</label>
+                <select class="form-control" id="sel1" name = "idProyek">
+                    <?php 
+                        include ('../phpScript/listProyek.php')
+                    ?>
+                </select>
             </div>
+            
+            <button type="submit" class="btn btn-default">Submit</button>
+        </fieldset>
+    </form>
     </div>
   </div>
   <div class="col-lg-4" allign = "center">

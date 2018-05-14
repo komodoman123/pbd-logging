@@ -8,10 +8,10 @@
       <a class="navbar-brand" href="#">Project Logging</a>
     </div>
     <ul class="nav navbar-nav">
-      <li id = "pegawai"><a href="#">Pegawai</a></li>
-      <li id = "proyek"><a href="#">Proyek</a></li>
-      <li id = "logging" class = "active"><a href="#">Logging</a></li>
-      <li id = "laporan"><a href="#">Laporan</a></li>
+      <li id = "pegawai"><a href="../pages/pegawaimenu.php">Pegawai</a></li>
+      <li id = "proyek"><a href="../pages/proyekmenu.php">Proyek</a></li>
+      <li id = "logging" class = "active"><a href="../pages/logginmenu.php">Logging</a></li>
+      <li id = "laporan"><a href="laporan.php">Laporan</a></li>
         
     </ul>
   </div>
