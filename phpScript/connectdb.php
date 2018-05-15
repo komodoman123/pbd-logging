@@ -1,6 +1,6 @@
 <?php
 
-$conn= new PDO("sqlsrv:Server=DESKTOP-RELACFJ;Database=master");
+$conn= new PDO("sqlsrv:Server=WINDOWS-PC\SQLEXPRESS;Database=logging");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 ?>
