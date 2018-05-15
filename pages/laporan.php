@@ -33,7 +33,7 @@
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
     <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Gaji Pegawai <i class ="fa fa-angle-down" ></i></button>
-    <form action="/action_page.php">
+    <form action="../subpages/gaji.php" method = "post">
         <fieldset id = "formi1" class = "collapse">
         <legend>Proyek</legend>
             <div class="form-group">
@@ -46,11 +46,11 @@
             </div>
             <div class="form-group">
             <label for="email">Tanggal Awal:</label>
-            <input type="email" class="form-control" id="email1" placeholder="Format (yyyy-mm-dd)" name="tanggal1">
+            <input type="text" class="form-control" id="email1" placeholder="Format (yyyy-mm-dd)" name="tanggal1">
             </div>
             <div class="form-group">
             <label for="pwd">tanggal Akhir:</label>
-            <input type="password" class="form-control" id="pwd1" placeholder="Format (yyyy-mm-dd)" name="tanggal2">
+            <input type="text" class="form-control" id="pwd1" placeholder="Format (yyyy-mm-dd)" name="tanggal2">
             </div>
 
             <button type="submit" class="btn btn-default">Submit</button>
@@ -74,11 +74,11 @@
             </div>
             <div class="form-group">
             <label for="email">Tanggal Awal:</label>
-            <input type="email" class="form-control" id="email2" placeholder="Format (yyyy-mm-dd)" name="tanggal12">
+            <input type="text" class="form-control" id="email2" placeholder="Format (yyyy-mm-dd)" name="tanggal12">
             </div>
             <div class="form-group">
             <label for="pwd">Tanggal Akhir</label>
-            <input type="password" class="form-control" id="pwd2" placeholder="Format (yyyy-mm-dd)" name="tanggal22">
+            <input type="text" class="form-control" id="pwd2" placeholder="Format (yyyy-mm-dd)" name="tanggal22">
             </div>
             
            <button type="submit" class="btn btn-default">Submit</button>
