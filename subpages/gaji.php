@@ -21,7 +21,7 @@ $(document).ready(function(){
 			<div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Proyek</h3>
+						<h3 class="panel-title">Gaji Pegawai dengan ID</h3>
 						<div class="pull-right">
 							<span class="searcg" data-toggle="tooltip" title="cari pegawai" data-container="body">
 								<i class="fa fa-search"></i>
