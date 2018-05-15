@@ -11,7 +11,7 @@
 ?>
 <script>
 	$(document).ready(function() {
-		$('.table-paginate').dataTable();
+		//$('.table-paginate').dataTable();
 	});
 </script>
 </head>
@@ -25,7 +25,7 @@
 							<tr>
 								<th>id Pegawai</th>
 								<th>Nama Pegawai</th>
-								
+
 							</tr>
 						</thead>
 						<tbody align = "center">
@@ -34,7 +34,7 @@
 						?>
 						</tbody>
 				</table>
-				
+
             </div>
     </div>
     <div class="col-lg-6" allign = "center">
@@ -47,7 +47,7 @@
 								<th>Nama Proyek</th>
                                 <th>id Pegawai</th>
                                 <th>Nama Pegawai</th>
-								
+
 							</tr>
 						</thead>
 						<tbody>

@@ -2,7 +2,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="205">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Project Logging</a>
@@ -12,7 +12,7 @@
       <li id = "proyek"><a href="#">Proyek</a></li>
       <li id = "logging"><a href="#">Logging</a></li>
       <li id = "laporan"><a href="#">Laporan</a></li>
-        
+
     </ul>
   </div>
 </nav>

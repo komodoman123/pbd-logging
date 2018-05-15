@@ -2,8 +2,7 @@
     try
 
 {
-$conn= new PDO("sqlsrv:Server=DESKTOP-RELACFJ;Database=master");
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+include ('connectdb.php');
 
 }
 
@@ -17,9 +16,13 @@ $getResults->execute();
 $results=$getResults->fetchAll(PDO::FETCH_BOTH);
 
 foreach ($results as $row) {
+
+
   echo "<tr>";
-  echo "<td>".$row['idpegawai']."</td>"; 
-  echo "<td>".$row['namaPegawai']."</td>"; 
+
+  echo "<td>".$row['idpegawai']."</td>";
+  //echo "<td>".$row['namaPegawai']."</td>";
+  echo "<td>"."<a href='pegawai.php?id=".$row["idpegawai"]."&nama=".$row["namaPegawai"]."'>".$row["namaPegawai"]."</td>";
   //echo $row['idpegawai'].''.$row['namaPegawai'];
   echo '</tr>';
 }
