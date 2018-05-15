@@ -32,7 +32,7 @@
   </div>
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Gaji Pegawai Pada Waktu tertentu<i class ="fa fa-angle-down" ></i></button>
+    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Gaji Pegawai Pada Waktu tertentu <i class ="fa fa-angle-down" ></i></button>
     <form action="../subpages/gaji.php" method = "post">
         <fieldset id = "formi1" class = "collapse">
         <legend>Gaji Pegawai</legend>

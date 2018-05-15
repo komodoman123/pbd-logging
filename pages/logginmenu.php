@@ -54,7 +54,7 @@ $(document).ready(function() {
   </div>
   <div class="col-lg-4" allign = "center">
 	<div class = "col-lg-12" margin-top = "5%" >
-	<button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai<i class ="fa fa-angle-down" ></i></button>
+	<button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai <i class ="fa fa-angle-down" ></i></button>
 	<div id = "tabel1" class = "collapse">
 					<table class="table table-hover table-bordered table-paginate" id="dev-table1">
 					<thead align = "center">
