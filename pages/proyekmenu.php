@@ -30,7 +30,7 @@
     </div>
     <div class="col-lg-6" allign = "center">
         <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel2">Assignment Pegawai <i class ="fa fa-angle-down" ></i></button>
-        <form action="/action_page.php">
+        <form action="/proyek.php">
         <fieldset id = "tabel2" class = "collapse">
         <legend>Project Assignment</legend>
             <div class="form-group">

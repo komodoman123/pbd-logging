@@ -16,11 +16,11 @@
         <fieldset id = "formi2">
         <legend>Proyek</legend>
             <div class = "form-group">
-            <input type="text" class="form-control" id="pwd" placeholder="Format (yyyy-mm-dd)" name="idpeg" value = <?php echo "".$_POST['idPegawai'].""?> disabled>    
+            <input type="text" class="form-control" id="pwd" placeholder="Format (yyyy-mm-dd)" name="idpeg" value = <?php echo "".$_POST['idPegawai1'].""?> disabled>    
             </div>
             <div class="form-group">
                 <label for="sel3">Pilih Pegawai (idProyek):</label>
-                <select class="form-control" id="sel3" name = "idProyek">
+                <select class="form-control" id="sel3" name = "idProyek1">
                     <?php 
                             try
 
@@ -47,11 +47,11 @@
             </div>
             <div class="form-group">
             <label for="email">Tanggal Awal:</label>
-            <input type="email" class="form-control" id="email2" placeholder="Format (yyyy-mm-dd hh:mm:ss)" name="tanggal12">
+            <input type="email" class="form-control" id="email2" placeholder="Format (yyyy-mm-dd hh:mm:ss)" name="tanggal0">
             </div>
             <div class="form-group">
             <label for="pwd">Tanggal Akhir</label>
-            <input type="password" class="form-control" id="pwd2" placeholder="Format (yyyy-mm-dd hh:mm:ss)" name="tanggal22">
+            <input type="password" class="form-control" id="pwd2" placeholder="Format (yyyy-mm-dd hh:mm:ss)" name="tanggal01">
             </div>
             
            <button type="submit" class="btn btn-default">Submit</button>
