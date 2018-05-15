@@ -4,7 +4,9 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <?php
-	include ('../layout/navbarlog.php');    
+	include ('../layout/navbarlog.php');
+	include ('../phpScript/insert.php');
+
 ?>
 </head>
 <body>
@@ -41,7 +43,7 @@
             <div class="form-group">
                 <label for="sel2">Pilih Pegawai (idPegawai):</label>
                 <select class="form-control" id="sel2" name = "idPegawai">
-                    <?php 
+                    <?php
                         include ('../phpScript/listPegawai.php')
                     ?>
                 </select>
