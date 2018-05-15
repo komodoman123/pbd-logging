@@ -28,7 +28,7 @@ $getResults->execute();
 
 
  else {
-    echo "id not found";
+
 
 }
 

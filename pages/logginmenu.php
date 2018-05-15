@@ -11,29 +11,7 @@
 </head>
 <body>
 <div class="row">
-  <div class="col-lg-4" allign = "center">
-    <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai <i class ="fa fa-angle-down" ></i></button>
-    <div id = "tabel1" class = "collapse">
-            <table class="table table-hover table-bordered table-paginate" id="dev-table1">
-						<thead align = "center">
-							<tr>
-                                <th>no</th>
-								<th>id Pegawai</th>
-								<th>id Proyek</th>
-                                <th>waktu in</th>
-                                <th>waktu out</th>
-							</tr>
-						</thead>
-						<tbody align = "center">
-						<?php
-							include ('../phpScript/tabel-log.php');
-						?>
-						</tbody>
-				</table>
-            </div>
-    </div>
-  </div>
+
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
     <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Insert Logg <i class ="fa fa-angle-down" ></i></button>
@@ -68,5 +46,31 @@
     </form>
     </div>
   </div>
+</div>
+<div class="col-lg-4" allign = "center">
+	<div class = "col-lg-12" margin-top = "5%" >
+	<button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai <i class ="fa fa-angle-down" ></i></button>
+	<div id = "tabel1" class = "collapse">
+					<table class="table table-hover table-bordered table-paginate" id="dev-table1">
+					<thead align = "center">
+						<tr>
+															<th>no</th>
+							<th>id Pegawai</th>
+							<th>id Proyek</th>
+															<th>waktu in</th>
+															<th>waktu out</th>
+						</tr>
+					</thead>
+					<tbody align = "center">
+					<?php
+						include ('../phpScript/tabel-log.php');
+						?>
+
+
+
+					</tbody>
+			</table>
+					</div>
+	</div>
 </div>
 </body>

@@ -22,13 +22,18 @@
         <fieldset id = "formi2">
         <legend>Proyek</legend>
             <div class = "form-group">
+
 						<p> pilih proyek dari pegawai <?php echo "".$_POST['idPegawai'].""?> </p>
             <input type="hidden" class="form-control" id="idpeg"  value = <?php echo "".$_POST['idPegawai'].""?>  name="idPegawai" >
             </div>
             <div class="form-group">
                 <label for="sel3">Pilih Proyek (idProyek):</label>
                 <select class="form-control" id="sel3" name = "idProyek">
+
+
+
                     <?php
+
                             try
 
                             {
@@ -53,16 +58,22 @@
                 </select>
             </div>
             <div class="form-group">
-						<div class='input-group date' id='datetimepicker1'>
-            <label for="email">Waktu Awal:</label>
+
+
+            <label for="Awal">Waktu Awal:</label>
             <input type="text" class="form-control" id="tgl1" placeholder="Format (yyyy-mm-dd hh:mm:ss)" name="tanggal12">
 
-            </div>
+
+
 					</div>
             <div class="form-group">
 
-            <label for="pwd">Waktu Akhir</label>
+
+            <label for="akhir">Waktu Akhir</label>
             <input type="text" class="form-control" id="tgl2" placeholder="Format (yyyy-mm-dd hh:mm:ss)" name="tanggal22">
+
+
+
             </div>
 
            <button type="submit" class="btn btn-default">Submit</button>
