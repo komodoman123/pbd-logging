@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-    
+
     	<div class="row">
 			<div class="col-md-6">
 				<div class="panel panel-primary">
@@ -26,20 +26,22 @@
 					<table class="table table-hover" id="dev-table">
 						<thead>
 							<tr>
-								<th>idProyek</th>
-								<th>Nama Proyek</th>
-								
+								<th>ID Pegawai</th>
+								<th>Nama Pegawai</th>
+
 							</tr>
 						</thead>
 						<tbody>
 						<?php
-							include ('../phpScript/tabel-proyek.php');
+							include ('../phpScript/assignment.php');
 						?>
 						</tbody>
 					</table>
+
 				</div>
+
 			</div>
-			
+
 		</div>
 	</div>
 	</body>
