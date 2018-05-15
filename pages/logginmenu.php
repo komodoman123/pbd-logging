@@ -6,8 +6,14 @@
 <?php
 	include ('../layout/navbarlog.php');
 	include ('../phpScript/insert.php');
-
 ?>
+<script>
+$(document).ready(function() {
+    $('.table-paginate').DataTable( {
+        "pagingType": "full_numbers"
+    } );
+});
+</script>
 </head>
 <body>
 <div class="row">
@@ -17,7 +23,7 @@
     <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Insert Logg <i class ="fa fa-angle-down" ></i></button>
     <form action="../subpages/insertlog.php" method = "post">
         <fieldset id = "formi1" class = "collapse">
-        <legend>Proyek</legend>
+        <legend>Logg record</legend>
             <div class="form-group">
                 <label for="sel2">Pilih Pegawai (idPegawai):</label>
                 <select class="form-control" id="sel2" name = "idPegawai">
@@ -36,7 +42,7 @@
     <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi3">Agregat logg <i class ="fa fa-angle-down" ></i></button>
     <form action="../subpages/agregatlog.php">
         <fieldset id = "formi3" class = "collapse">
-        <legend>Proyek</legend>
+        <legend>Logg Agregate</legend>
             <div class="form-group">
             <label for="email">Tanggal:</label>
             <input type="text" class="form-control" id="email1" placeholder="Format (yyyy-mm-dd)" name="tanggalagg">
@@ -46,19 +52,18 @@
     </form>
     </div>
   </div>
-</div>
-<div class="col-lg-4" allign = "center">
+  <div class="col-lg-4" allign = "center">
 	<div class = "col-lg-12" margin-top = "5%" >
-	<button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai <i class ="fa fa-angle-down" ></i></button>
+	<button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai<i class ="fa fa-angle-down" ></i></button>
 	<div id = "tabel1" class = "collapse">
 					<table class="table table-hover table-bordered table-paginate" id="dev-table1">
 					<thead align = "center">
 						<tr>
-															<th>no</th>
+							<th>no</th>
 							<th>id Pegawai</th>
 							<th>id Proyek</th>
-															<th>waktu in</th>
-															<th>waktu out</th>
+							<th>waktu in</th>
+							<th>waktu out</th>
 						</tr>
 					</thead>
 					<tbody align = "center">
@@ -67,10 +72,11 @@
 						?>
 
 
-
 					</tbody>
 			</table>
-					</div>
+		</div>
 	</div>
+</div>
+
 </div>
 </body>

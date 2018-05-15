@@ -15,11 +15,7 @@ $offset=0;
 if (isset($_GET['offset'])) {
     $offset = $_GET['offset']-1;
 
-} else {
-    $offset=0;
-
-}
-
+} 
 
 echo "<nav aria-label='Page navigation'>";
 echo  "<ul class='pagination'>";

@@ -32,10 +32,10 @@
   </div>
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Gaji Pegawai <i class ="fa fa-angle-down" ></i></button>
+    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Gaji Pegawai Pada Waktu tertentu<i class ="fa fa-angle-down" ></i></button>
     <form action="../subpages/gaji.php" method = "post">
         <fieldset id = "formi1" class = "collapse">
-        <legend>Proyek</legend>
+        <legend>Gaji Pegawai</legend>
             <div class="form-group">
                 <label for="sel2">Pilih Pegawai (idPegawai):</label>
                 <select class="form-control" id="sel2" name = "idPegawai">
@@ -63,7 +63,7 @@
     <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi2">Presentase Waktu Pegawai <i class ="fa fa-angle-down" ></i></button>
     <form action="/action_page.php">
         <fieldset id = "formi2" class = "collapse">
-        <legend>Proyek</legend>
+        <legend>Presentase Waktu Kerja Pada Waktu Tertentu</legend>
             <div class="form-group">
                 <label for="sel3">Pilih Pegawai (idPegawai):</label>
                 <select class="form-control" id="sel3" name = "idPegawai">
