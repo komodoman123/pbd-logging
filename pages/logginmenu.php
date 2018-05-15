@@ -4,35 +4,38 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <?php
-	include ('../layout/navbarlog.php')
+	include ('../layout/navbarlog.php');    
 ?>
 </head>
 <body>
 <div class="row">
   <div class="col-lg-4" allign = "center">
     <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi">Total Waktu yang digunakan Proyek <i class ="fa fa-angle-down" ></i></button>
-    <form action="/action_page.php">
-        <fieldset id = "formi" class = "collapse">
-        <legend>Proyek</legend>
-            <div class="form-group">
-            <label for="sel1">Pilih Proyek (idProyek):</label>
-                <select class="form-control" id="sel1" name = "idProyek">
-                    <?php 
-                        include ('../phpScript/listProyek.php')
-                    ?>
-                </select>
+    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Logg Pegawai <i class ="fa fa-angle-down" ></i></button>
+    <div id = "tabel1" class = "collapse">
+            <table class="table table-hover table-bordered table-paginate" id="dev-table1">
+						<thead align = "center">
+							<tr>
+                                <th>no</th>
+								<th>id Pegawai</th>
+								<th>id Proyek</th>
+                                <th>waktu in</th>
+                                <th>waktu out</th>
+							</tr>
+						</thead>
+						<tbody align = "center">
+						<?php
+							include ('../phpScript/tabel-log.php');
+						?>
+						</tbody>
+				</table>
             </div>
-            
-            <button type="submit" class="btn btn-default">Submit</button>
-        </fieldset>
-    </form>
     </div>
   </div>
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Gaji Pegawai <i class ="fa fa-angle-down" ></i></button>
-    <form action="/action_page.php">
+    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi1">Insert Logg <i class ="fa fa-angle-down" ></i></button>
+    <form action="../subpages/insertlog.php" method = "post">
         <fieldset id = "formi1" class = "collapse">
         <legend>Proyek</legend>
             <div class="form-group">
@@ -43,44 +46,22 @@
                     ?>
                 </select>
             </div>
-            <div class="form-group">
-            <label for="email">Tanggal Awal:</label>
-            <input type="email" class="form-control" id="email1" placeholder="Format (yyyy-mm-dd)" name="tanggal1">
-            </div>
-            <div class="form-group">
-            <label for="pwd">tanggal Akhir:</label>
-            <input type="password" class="form-control" id="pwd1" placeholder="Format (yyyy-mm-dd)" name="tanggal2">
-            </div>
-
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default" >Next <i class = "fa fa-angle-right"></i></button>
         </fieldset>
     </form>
     </div>
   </div>
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
-    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi2">Presentase Waktu Pegawai <i class ="fa fa-angle-down" ></i></button>
-    <form action="/action_page.php">
-        <fieldset id = "formi2" class = "collapse">
+    <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi3">Agregat logg <i class ="fa fa-angle-down" ></i></button>
+    <form action="../subpages/agregatlog.php">
+        <fieldset id = "formi3" class = "collapse">
         <legend>Proyek</legend>
             <div class="form-group">
-                <label for="sel3">Pilih Pegawai (idPegawai):</label>
-                <select class="form-control" id="sel3" name = "idPegawai">
-                    <?php 
-                        include ('../phpScript/listPegawai.php')
-                    ?>
-                </select>
+            <label for="email">Tanggal:</label>
+            <input type="text" class="form-control" id="email1" placeholder="Format (yyyy-mm-dd)" name="tanggalagg">
             </div>
-            <div class="form-group">
-            <label for="email">Tanggal Awal:</label>
-            <input type="email" class="form-control" id="email2" placeholder="Format (yyyy-mm-dd)" name="tanggal12">
-            </div>
-            <div class="form-group">
-            <label for="pwd">Tanggal Akhir</label>
-            <input type="password" class="form-control" id="pwd2" placeholder="Format (yyyy-mm-dd)" name="tanggal22">
-            </div>
-            
-           <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">Agregat</button>
         </fieldset>
     </form>
     </div>

@@ -110,13 +110,13 @@ margin-bottom: 15px;
 				<thead align = "center">
 					<tr>
 						<th>ID Proyek</th>
-						<th>Gaji</th>
+						<th>Nama Proyek</th>
 
 					</tr>
 				</thead>
 				<tbody align = "center">
 				<?php
-					//include ('../phpScript/tabel-pegawai.php');
+					include ('../phpScript/jobassignment.php');
 				?>
 				</tbody>
 		</table>
@@ -130,7 +130,7 @@ margin-bottom: 15px;
 				<thead align = "center">
 					<tr>
 						<th>ID Proyek</th>
-						<th>Gaji</th>
+						<th>Nama Proyek</th>
 
 					</tr>
 				</thead>
@@ -176,16 +176,13 @@ margin-bottom: 15px;
 var ctx = document.getElementById("Chartwaktu").getContext('2d');
 var proyek=<?php echo json_encode($proyek ); ?>;
 var persen= <?php echo json_encode($persen ); ?>;
+var color = <?php echo json_encode($colorfix ); ?>;
 var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
     labels: proyek,
     datasets: [{
-      backgroundColor: [
-        "#2ecc71",
-        "#e74c3c",
-        "#34495e"
-      ],
+      backgroundColor: color,
       data:persen
     }]
   }

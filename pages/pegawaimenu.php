@@ -17,15 +17,17 @@
 </head>
 <body>
 <div class = "row">
-    <div class="col-lg-6" allign = "center">
-        <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Pegawai <i class ="fa fa-angle-down" ></i></button>
+    <div class="col-lg-4" allign = "center">
+        
+    </div>
+    <div class="col-lg-4" allign = "center">
+	<button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel1">Pegawai <i class ="fa fa-angle-down" ></i></button>
             <div id = "tabel1" class = "collapse">
             <table class="table table-hover table-bordered table-paginate" id="dev-table1">
 						<thead align = "center">
 							<tr>
 								<th>id Pegawai</th>
 								<th>Nama Pegawai</th>
-
 							</tr>
 						</thead>
 						<tbody align = "center">
@@ -36,27 +38,8 @@
 				</table>
 
             </div>
-    </div>
-    <div class="col-lg-6" allign = "center">
-        <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#tabel2">Assignment Pegawai <i class ="fa fa-angle-down" ></i></button>
-            <div id = "tabel2" class = "collapse">
-            <table class="table table-hover" id="dev-table">
-						<thead>
-							<tr>
-								<th>id Proyek</th>
-								<th>Nama Proyek</th>
-                                <th>id Pegawai</th>
-                                <th>Nama Pegawai</th>
-
-							</tr>
-						</thead>
-						<tbody>
-						<?php
-							include ('../phpScript/tabel-pekerjaan.php');
-						?>
-						</tbody>
-				</table>
-            </div>
+	</div>
+	<div class="col-lg-4" allign = "center">
     </div>
 </div>
 </body>
