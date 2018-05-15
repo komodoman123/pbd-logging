@@ -12,8 +12,15 @@ catch(Exception $e)
 }
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-
-} else {
+    $tanggal1=2018-04-11;
+    $tanggal2=date("Y-m-d");
+  }
+else if(isset($_GET['idPegawai'])){
+  $id = $_GET['idPegawai'];
+  $tanggal1=$_GET['tanggal12'];
+  $tanggal2=$_GET['tanggal22'];
+}
+ else {
     echo "id not found";
 
 }
@@ -22,7 +29,7 @@ $persen=array();
 $proyek=array();
 $color = array("#2ecc71","#e74c3c","#34495e","#42f4e8","#f4e541","#f49741","#04f47c","#041cf4","#f40447","#c8f404");
 $colorfix = array();
-$tsql = "exec presentaseKerja "."'2018-04-11','".date("Y-m-d") ."',".$id;
+$tsql = "exec presentaseKerja '".$tanggal1."','".date("Y-m-d") ."',".$id;
 $getResults=$conn->prepare($tsql);
 $getResults->execute();
 $results=$getResults->fetchAll(PDO::FETCH_BOTH);

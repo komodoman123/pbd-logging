@@ -39,7 +39,7 @@
             <div class="form-group">
                 <label for="sel2">Pilih Pegawai (idPegawai):</label>
                 <select class="form-control" id="sel2" name = "idPegawai">
-                    <?php 
+                    <?php
                         include ('../phpScript/listPegawai.php')
                     ?>
                 </select>
@@ -61,13 +61,13 @@
   <div class="col-lg-4" allign = "center">
   <div class = "col-lg-12" margin-top = "5%" >
     <button class = "btn btn-info btn-block" data-toggle="collapse" data-target="#formi2">Presentase Waktu Pegawai <i class ="fa fa-angle-down" ></i></button>
-    <form action="/action_page.php">
+    <form action="../subpages/presentase.php">
         <fieldset id = "formi2" class = "collapse">
         <legend>Presentase Waktu Kerja Pada Waktu Tertentu</legend>
             <div class="form-group">
                 <label for="sel3">Pilih Pegawai (idPegawai):</label>
                 <select class="form-control" id="sel3" name = "idPegawai">
-                    <?php 
+                    <?php
                         include ('../phpScript/listPegawai.php')
                     ?>
                 </select>
@@ -80,7 +80,7 @@
             <label for="pwd">Tanggal Akhir</label>
             <input type="text" class="form-control" id="pwd2" placeholder="Format (yyyy-mm-dd)" name="tanggal22">
             </div>
-            
+
            <button type="submit" class="btn btn-default">Submit</button>
         </fieldset>
     </form>

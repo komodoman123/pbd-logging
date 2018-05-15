@@ -15,7 +15,7 @@ $offset=0;
 if (isset($_GET['offset'])) {
     $offset = $_GET['offset']-1;
 
-} 
+}
 
 echo "<nav aria-label='Page navigation'>";
 echo  "<ul class='pagination'>";
@@ -27,8 +27,8 @@ for ($x = 1; $x <= 10; $x++) {
 
 echo"</ul>";
 echo"</nav>";
-$start=$offset * 100;
-$tsql = "select * FROM logg ORDER BY id asc OFFSET ". $start." ROWS FETCH NEXT 1000 ROWS ONLY;";
+$start=$offset * 1000;
+$tsql = "select * FROM logg ORDER BY id asc OFFSET ". $start." ROWS FETCH NEXT 1000 ROWS ONLY";
 $getResults=$conn->prepare($tsql);
 $getResults->execute();
 $results=$getResults->fetchAll(PDO::FETCH_BOTH);
