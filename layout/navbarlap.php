@@ -11,7 +11,7 @@
       <li id = "pegawai"><a href="../pages/pegawaimenu.php">Pegawai</a></li>
       <li id = "proyek"><a href="../pages/proyekmenu.php">Proyek</a></li>
       <li id = "logging"><a href="../pages/logginmenu.php">Logging</a></li>
-      <li id = "laporan" class = "active"><a href="laporan.php">Laporan</a></li>
+      <li id = "laporan" class = "active"><a href="../pages/laporan.php">Laporan</a></li>
         
     </ul>
   </div>

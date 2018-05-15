@@ -5,7 +5,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <?php
-	include ('../layout/navbarpro.php')
+	include ('../layout/navbarlap.php')
 ?>
 </head>
 <body>
@@ -15,7 +15,7 @@
 			<div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Proyek</h3>
+						<h3 class="panel-title">Pegawai dengan ID <?php echo $_GET['idPegawai']  ?></h3>
 						<div class="pull-right">
 
 						</div>

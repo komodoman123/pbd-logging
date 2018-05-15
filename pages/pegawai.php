@@ -98,8 +98,6 @@ margin-bottom: 15px;
       <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="500">
         <li><a href="#assignment">Job Assignment</a></li>
         <li><a href="#gaji">Gaji</a></li>
-        <li><a href="#waktu">Waktu</a></li>
-
       </ul>
     </nav>
     <div class="col-sm-9">
@@ -142,50 +140,10 @@ margin-bottom: 15px;
 		</table>
 
       </div>
-      <div id="waktu">
-        <h3>Presentase Kerja</h3>
-				<table class="table table-hover table-bordered " id="dev-table1">
-				<thead align = "center">
-					<tr>
-						<th>ID proyek</th>
-						<th>Presentase</th>
-
-					</tr>
-				</thead>
-				<tbody align = "center">
-				<?php
-					include ('../phpScript/presentaseKerja.php');
-				?>
-				</tbody>
-		</table>
-
-
-					  <div>
-					    <canvas id="Chartwaktu" height="100" ></canvas>
-					  </div>
-
-      </div>
-    </div>
+      <div>
   </div>
 </div>
 
 </body>
 
-<script>
-
-var ctx = document.getElementById("Chartwaktu").getContext('2d');
-var proyek=<?php echo json_encode($proyek ); ?>;
-var persen= <?php echo json_encode($persen ); ?>;
-var color = <?php echo json_encode($colorfix ); ?>;
-var myChart = new Chart(ctx, {
-  type: 'pie',
-  data: {
-    labels: proyek,
-    datasets: [{
-      backgroundColor: color,
-      data:persen
-    }]
-  }
-});
-</script>
 </html>
